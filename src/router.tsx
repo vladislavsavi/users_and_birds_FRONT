@@ -6,7 +6,7 @@ import {
 
 import { AppLayout } from './components';
 
-import {SignUpPage} from './pages';
+import {SignUpPage, SignInPage} from './pages';
 
 export function AppRouter() {
     return (
@@ -14,7 +14,7 @@ export function AppRouter() {
             <AppLayout>
                 <Switch>
                     <Route path="/sign-in">
-                        <h1>sign-in</h1>
+                        <SignInPage/>
                     </Route>
                     <Route path="/sign-up">
                         <SignUpPage />
