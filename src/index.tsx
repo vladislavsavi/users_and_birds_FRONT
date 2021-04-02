@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+import { AppRouter } from './router';
+import { AxiosContextProvider } from './utils';
+
+import './index.scss';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AxiosContextProvider>
+      <AppRouter />
+    </AxiosContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
