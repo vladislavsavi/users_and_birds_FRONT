@@ -37,14 +37,14 @@ export const SignInForm = () => {
                     message: 'Enter a valid email address!',
                 }]}
             >
-                <Input prefix={<UserOutlined />} />
+                <Input prefix={<UserOutlined />}  placeholder='Input email'/>
             </Form.Item>
 
             <Form.Item
                 name="password"
                 rules={[{ required: true, message: 'Please input your password!' }]}
             >
-                <Input.Password prefix={<KeyOutlined />} />
+                <Input.Password prefix={<KeyOutlined />} placeholder='Input password'/>
             </Form.Item>
 
             <Form.Item>

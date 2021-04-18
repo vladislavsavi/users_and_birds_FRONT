@@ -19,6 +19,12 @@ export function AppRouter() {
                     <Route path="/sign-up">
                         <SignUpPage />
                     </Route>
+                    <Route path="/birds">
+                        <h1>BIRDS</h1>
+                    </Route>
+                    <Route path="/users">
+                        <h1>USERS</h1>
+                    </Route>
                     <Route path="/">
                         <h1>HOME</h1>
                     </Route>
