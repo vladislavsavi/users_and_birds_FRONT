@@ -13,7 +13,7 @@ export function AppRouter() {
         <Router>
             <AppLayout>
                 <Switch>
-                    <Route path="/sign-in">
+                    <Route path="/sign-in" exact>
                         <SignInPage/>
                     </Route>
                     <Route path="/sign-up">
