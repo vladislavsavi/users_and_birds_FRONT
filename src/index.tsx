@@ -1,11 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import reportWebVitals from "./reportWebVitals";
 
-import { AppRouter } from './router';
-import { AxiosContextProvider } from './utils';
+import { AppRouter } from "./router";
+import { AxiosContextProvider } from "./utils";
 
-import './index.scss';
+import "./index.scss";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,7 +13,7 @@ ReactDOM.render(
       <AppRouter />
     </AxiosContextProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
