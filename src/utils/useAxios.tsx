@@ -2,7 +2,7 @@ import { createContext, FC, useContext } from "react";
 import axios, { AxiosInstance } from "axios";
 
 const axiosInstance: AxiosInstance = axios.create({
-  baseURL: "http://localhost:8081",
+  baseURL: process.env.canonical_host ?? "http://localhost:8081",
   timeout: 2000,
 });
 
