@@ -1,4 +1,7 @@
 {
   "root": "build/",
-  "canonical_host": "${HOST}"
+  "canonical_host": "${HOST}",
+  "routes": {
+    "/**": "index.html"
+  }
 }
