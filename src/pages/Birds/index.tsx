@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from "react";
+import { FC, useEffect, useState, useCallback } from "react";
 import { Button, Space, Table } from "antd";
 import {
   DeleteOutlined,
@@ -36,7 +36,7 @@ export const Birds: FC<{}> = () => {
   const [birds, setBirds] = useState<BirdModel[]>();
   const axios = useAxios();
 
-  const getAllBirds = async () => {
+  const getAllBirds = useCallback(async () => {
     try {
       setLoading(true);
       const { data: birds } = await axios.get("/bird/list");
@@ -46,7 +46,7 @@ export const Birds: FC<{}> = () => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [axios]);
 
   const onRemove = async (id: string) => {
     try {
@@ -60,7 +60,7 @@ export const Birds: FC<{}> = () => {
 
   useEffect(() => {
     getAllBirds();
-  }, []);
+  }, [getAllBirds]);
 
   return (
     <>

@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { PageHeader, Button } from "antd";
+import { PageHeader } from "antd";
 import { Link } from "react-router-dom";
 
 import "./header.scss";

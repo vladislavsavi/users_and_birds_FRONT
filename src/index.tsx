@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import reportWebVitals from "./reportWebVitals";
 
+import reportWebVitals from "./reportWebVitals";
 import { AppRouter } from "./router";
 import { AxiosContextProvider } from "./utils";
 

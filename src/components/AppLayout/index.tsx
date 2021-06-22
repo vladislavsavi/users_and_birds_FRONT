@@ -6,7 +6,7 @@ import { Header } from "../Header";
 import { Menu } from "../Menu";
 import "./layout.scss";
 
-const { Content, Footer } = Layout;
+const { Content } = Layout;
 
 export const AppLayout: FC = ({ children }) => {
   return (

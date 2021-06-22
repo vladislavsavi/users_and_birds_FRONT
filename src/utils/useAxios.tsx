@@ -2,7 +2,10 @@ import { createContext, FC, useContext } from "react";
 import axios, { AxiosInstance } from "axios";
 
 const axiosInstance: AxiosInstance = axios.create({
-  baseURL: process.env.canonical_host ?? "http://localhost:8081",
+  baseURL:
+    process.env.NODE_ENV === "development"
+      ? "http://localhost:8081"
+      : process.env.REACT_APP_API_URL,
   timeout: 2000,
 });
 
